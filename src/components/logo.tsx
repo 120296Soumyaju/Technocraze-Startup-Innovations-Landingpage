@@ -14,14 +14,6 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
       className={cn("fill-current", className)} // Apply base fill and allow overriding class
       {...rest} // Pass other props
     >
-      <defs>
-         {/* Define gradients or filters if needed, keeping simple for now */}
-         <linearGradient id="tsiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-           <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))', stopOpacity: 1 }} />
-           <stop offset="100%" style={{ stopColor: 'hsl(15, 80%, 60%)', stopOpacity: 1 }} /> {/* Approximation of pinkish color */}
-         </linearGradient>
-      </defs>
-
       {/* Simplified Lightbulb Icon */}
       <g transform="translate(10, 0)">
         {/* Bulb */}
@@ -43,8 +35,7 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
         fontFamily="Arial, sans-serif" // Using a common font
         fontSize="28" // Larger size for TSI
         fontWeight="bold"
-        fill="url(#tsiGradient)" // Using gradient for TSI color
-        // fill="hsl(var(--primary))" // Fallback or alternative primary color
+        fill="hsl(var(--primary))" // Reverted to primary color
       >
         TSI
       </text>
