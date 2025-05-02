@@ -1,55 +1,73 @@
 import type React from 'react';
 import { cn } from '@/lib/utils'; // Import cn for conditional classes
 
+// Approximate colors from the image:
+const bulbGlassColor = "#A0E0D0"; // Light teal/green
+const brainColor = "#FA8072"; // Orange/Coral
+const bulbBaseColor = "#808080"; // Gray
+const tsiTextColor = "#FA8072"; // Coral/Salmon
+const taglineColor = "#20B2AA"; // Teal
+
 export function Logo(props: React.SVGProps<SVGSVGElement>) {
   const { className, ...rest } = props; // Destructure className
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 50" // Adjusted viewBox for new aspect ratio
-      width="150" // Default width, can be overridden by className
-      height="37.5" // Default height, maintaining aspect ratio
+      viewBox="0 0 250 60" // Adjusted viewBox for the new layout
+      width="200" // Default width, can be overridden by className
+      height="48" // Default height, maintaining aspect ratio (250/60 * 48 = 200)
       aria-label="Technocraze Startup Innovations Logo"
-      className={cn("fill-current", className)} // Apply base fill and allow overriding class
+      className={cn(className)} // Allow overriding class, removed default fill
       {...rest} // Pass other props
     >
-      {/* Simplified Lightbulb Icon */}
-      <g transform="translate(10, 0)">
-        {/* Bulb */}
-        <circle cx="20" cy="20" r="15" fill="hsl(var(--primary) / 0.1)" stroke="hsl(var(--primary))" strokeWidth="1"/>
-        {/* Base */}
-        <rect x="12" y="34" width="16" height="8" fill="hsl(var(--muted))" />
-        <line x1="12" y1="37" x2="28" y2="37" stroke="hsl(var(--muted-foreground))" strokeWidth="1"/>
-        <line x1="12" y1="40" x2="28" y2="40" stroke="hsl(var(--muted-foreground))" strokeWidth="1"/>
-        {/* Simplified Brain/Filament (Placeholder) */}
-        <path d="M15 20 Q 20 15, 25 20 T 15 20" stroke="hsl(var(--primary))" strokeWidth="1" fill="hsl(var(--primary) / 0.3)" />
-         <path d="M16 25 Q 20 22, 24 25" stroke="hsl(var(--primary))" strokeWidth="0.5" fill="transparent" />
-          <path d="M17 28 Q 20 26, 23 28" stroke="hsl(var(--primary))" strokeWidth="0.5" fill="transparent" />
+      {/* Lightbulb Icon Group */}
+      <g transform="translate(10, 5)">
+        {/* Bulb Glass */}
+        <ellipse cx="25" cy="20" rx="18" ry="20" fill={bulbGlassColor + '33'} stroke={bulbGlassColor} strokeWidth="1"/>
+        {/* Brain (Simplified Path) */}
+        <path
+          d="M 15,25 C 10,15 20,10 25,15 C 30,10 40,15 35,25 C 40,30 30,35 25,30 C 20,35 10,30 15,25 Z M 18,28 Q 25 24 32 28 M 20,32 Q 25 29 30 32"
+          fill={brainColor}
+          stroke={brainColor}
+          strokeWidth="0.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        {/* Bulb Base */}
+        <rect x="17" y="39" width="16" height="8" fill={bulbBaseColor} />
+        {/* Base Lines */}
+        <line x1="17" y1="42" x2="33" y2="42" stroke="#FFFFFF" strokeWidth="1"/>
+        <line x1="17" y1="45" x2="33" y2="45" stroke="#FFFFFF" strokeWidth="1"/>
       </g>
 
-      {/* TSI Text */}
-      <text
-        x="50" // Positioned next to the bulb
-        y="30" // Vertically centered relative to the bulb base
-        fontFamily="Arial, sans-serif" // Using a common font
-        fontSize="28" // Larger size for TSI
-        fontWeight="bold"
-        fill="hsl(var(--primary))" // Reverted to primary color
-      >
-        TSI
-      </text>
+      {/* Text Group */}
+      <g transform="translate(65, 0)">
+        {/* TSI Text */}
+        <text
+          x="0"
+          y="35" // Adjusted vertical position
+          fontFamily="Arial, sans-serif"
+          fontSize="36" // Adjusted size
+          fontWeight="bold"
+          fill={tsiTextColor}
+          letterSpacing="2" // Add some letter spacing
+        >
+          TSI
+        </text>
 
-      {/* Tagline Text */}
-      <text
-        x="50" // Aligned with TSI start
-        y="45" // Positioned below TSI
-        fontFamily="Arial, sans-serif" // Common font
-        fontSize="9" // Smaller size for tagline
-        fill="hsl(var(--accent))" // Using accent color for tagline
-      >
-        Technocraze Startup Innovations
-      </text>
+        {/* Tagline Text */}
+        <text
+          x="0"
+          y="50" // Positioned below TSI
+          fontFamily="Arial, sans-serif"
+          fontSize="10" // Adjusted size
+          fontWeight="bold" // Make tagline bold as in image
+          fill={taglineColor}
+        >
+          Technocraze Startup Innovations
+        </text>
+      </g>
     </svg>
   );
 }
