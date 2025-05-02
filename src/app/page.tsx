@@ -9,18 +9,18 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Code, Cpu, Smartphone, Cloud, BrainCircuit, Users, Briefcase, Phone, Rocket, Lightbulb, CheckCircle } from 'lucide-react';
+import { Code, Cpu, Smartphone, Cloud, BrainCircuit, Users, Briefcase, Phone, Rocket, Lightbulb, CheckCircle, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Technocraze Innovations - Turning Ideas into Reality',
   description: 'Expert software, hardware, web/mobile app, IoT, AI/ML development. We build innovative solutions and final year projects.',
 };
 
-// Team Data (replace with actual data)
+// Team Data (Updated)
 const teamMembers = [
-  { name: "Member One", role: "CEO & Founder", image: "https://picsum.photos/200/200?random=1", bio: "Visionary leader driving innovation." },
-  { name: "Member Two", role: "Lead Developer", image: "https://picsum.photos/200/200?random=2", bio: "Expert in full-stack development." },
-  { name: "Member Three", role: "Hardware Engineer", image: "https://picsum.photos/200/200?random=3", bio: "Specialist in IoT and embedded systems." },
+  { name: "TEJAS KADAM", role: "Founder & Lead Full Stack Engineer", image: "https://picsum.photos/200/200?random=1", bio: "Visionary leader driving innovation." },
+  { name: "SUJIT TADADIKAR", role: "CTO (Research and Development) & Co-Founder, Lead Embedded Software Engineer", image: "https://picsum.photos/200/200?random=2", bio: "Expert in full-stack development." }, // Role updated
+  { name: "NEHALI TANDEL", role: "CHIEF OF PRODUCT DESIGN ENGINEERING", image: "https://picsum.photos/200/200?random=3", bio: "Specialist in IoT and embedded systems." },
 ];
 
 // Portfolio Data (replace with actual data)
@@ -302,25 +302,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
-
-// Add Mail Icon component (or use lucide-react if preferred)
-function Mail(props: React.SVGProps<SVGSVGElement>) {
- return (
-   <svg
-     {...props}
-     xmlns="http://www.w3.org/2000/svg"
-     width="24"
-     height="24"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="currentColor"
-     strokeWidth="2"
-     strokeLinecap="round"
-     strokeLinejoin="round"
-   >
-     <rect width="20" height="16" x="2" y="4" rx="2" />
-     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-   </svg>
- )
 }
