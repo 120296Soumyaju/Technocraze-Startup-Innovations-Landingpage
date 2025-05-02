@@ -11,10 +11,9 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Logo className="h-6 w-auto" />
-            <span className="hidden font-bold sm:inline-block">
-              Technocraze Innovations
-            </span>
+            {/* Increased logo size in desktop view */}
+            <Logo className="h-10 w-auto" />
+             {/* Removed company title span */}
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link
@@ -58,11 +57,12 @@ export function Header() {
           <SheetContent side="left" className="pr-0">
             <Link
               href="/"
-              className="flex items-center"
+              className="flex items-center mb-4" // Added margin bottom
               onClick={() => document.querySelector<HTMLButtonElement>('[data-radix-dialog-close]')?.click()}
             >
-              <Logo className="mr-2 h-6 w-auto" />
-              <span className="font-bold">Technocraze</span>
+              {/* Used larger logo in sheet */}
+              <Logo className="mr-2 h-8 w-auto" />
+              {/* Removed company title span */}
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
               <div className="flex flex-col space-y-3">
@@ -101,8 +101,9 @@ export function Header() {
          {/* Logo for mobile view */}
          <div className="flex flex-1 items-center justify-start space-x-2 md:hidden">
            <Link href="/" className="flex items-center">
-             <Logo className="h-6 w-auto" />
-             <span className="font-bold ml-2">Technocraze</span>
+             {/* Used larger logo in mobile view */}
+             <Logo className="h-8 w-auto" />
+             {/* Removed company title span */}
            </Link>
          </div>
         <div className="flex flex-1 items-center justify-end space-x-2">

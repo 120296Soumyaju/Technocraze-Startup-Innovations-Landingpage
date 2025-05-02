@@ -1,12 +1,13 @@
 import type React from 'react';
 import { cn } from '@/lib/utils'; // Import cn for conditional classes
 
-// Approximate colors from the image:
+// Original colors
 const bulbGlassColor = "#A0E0D0"; // Light teal/green
 const brainColor = "#FA8072"; // Orange/Coral
 const bulbBaseColor = "#808080"; // Gray
 const tsiTextColor = "#FA8072"; // Coral/Salmon
 const taglineColor = "#20B2AA"; // Teal
+
 
 export function Logo(props: React.SVGProps<SVGSVGElement>) {
   const { className, ...rest } = props; // Destructure className
@@ -14,11 +15,11 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 250 60" // Adjusted viewBox for the new layout
-      width="200" // Default width, can be overridden by className
-      height="48" // Default height, maintaining aspect ratio (250/60 * 48 = 200)
+      viewBox="0 0 250 60" // Keep original viewBox
+      width="250" // Increased width
+      height="60" // Increased height (maintaining aspect ratio 250/60)
       aria-label="Technocraze Startup Innovations Logo"
-      className={cn(className)} // Allow overriding class, removed default fill
+      className={cn(className)} // Allow overriding class
       {...rest} // Pass other props
     >
       {/* Lightbulb Icon Group */}
