@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 // Team Data (Updated)
 const teamMembers = [
   { name: "TEJAS KADAM", role: "Founder & Lead Full Stack Engineer", image: "https://picsum.photos/200/200?random=1", bio: "Visionary leader driving innovation." },
-  { name: "SUJIT TADADIKAR", role: "CTO (Research and Development) & Co-Founder, Lead Embedded Software Engineer", image: "https://picsum.photos/200/200?random=2", bio: "Expert in full-stack development." }, // Role updated
-  { name: "NEHALI TANDEL", role: "CHIEF OF PRODUCT DESIGN ENGINEERING", image: "https://picsum.photos/200/200?random=3", bio: "Specialist in IoT and embedded systems." },
+  { name: "SUJIT TADADIKAR", role: "CHIEF OF PRODUCT DESIGN ENGINEERING", image: "https://picsum.photos/200/200?random=2", bio: "Expert in full-stack development." }, // Role updated (swapped with member 3)
+  { name: "NEHALI TANDEL", role: "CTO (Research and Development) & Co-Founder, Lead Embedded Software Engineer", image: "https://picsum.photos/200/200?random=3", bio: "Specialist in IoT and embedded systems." }, // Role updated (swapped with member 2)
 ];
 
 // Portfolio Data (replace with actual data)
