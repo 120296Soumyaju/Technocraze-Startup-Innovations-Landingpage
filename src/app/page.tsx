@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 // Team Data (Updated)
 const teamMembers = [
   { name: "TEJAS KADAM", role: "Founder & Lead Full Stack Engineer", image: "https://picsum.photos/200/200?random=1", bio: "Visionary leader driving innovation." },
-  { name: "SUJIT TADADIKAR", role: "CTO (Research and Development) & Co-Founder, Lead Embedded Software Engineer", image: "https://picsum.photos/200/200?random=2", bio: "Specialist in IoT and embedded systems."}, // BIO updated (swapped with member 3)
-  { name: "NEHALI TANDEL", role: "CHIEF OF PRODUCT DESIGN & SENIOR EXECUTIVE – CYBERSECURITY (SOC & VAPT)", image: "https://picsum.photos/200/200?random=3", bio: "Creative technology leader blending cybersecurity and graphic design expertise to drive secure, user-focused product innovation." }, // BIO updated (swapped with member 2)
+  { name: "SUJIT TADADIKAR", role: "CTO (Research and Development) & Co-Founder, Lead Embedded Software Engineer", image: "https://picsum.photos/200/200?random=2", bio: "Creative technology leader blending cybersecurity and graphic design expertise to drive secure, user-focused product innovation." }, // BIO updated (swapped with member 3)
+  { name: "NEHALI TANDEL", role: "CHIEF OF PRODUCT DESIGN & SENIOR EXECUTIVE – CYBERSECURITY (SOC & VAPT)", image: "https://picsum.photos/200/200?random=3", bio: "Specialist in IoT and embedded systems."}, // BIO updated (swapped with member 2)
 ];
 
 // Portfolio Data (replace with actual data)
@@ -29,6 +29,7 @@ const portfolioItems = [
   { title: "E-commerce Web App", description: "Scalable online store platform.", image: "https://picsum.photos/400/300?random=5", dataAiHint: "ecommerce website", category: "Web App" },
   { title: "AI Predictive Maintenance", description: "ML model for industrial equipment.", image: "https://picsum.photos/400/300?random=6", dataAiHint: "factory machine", category: "AI/ML" },
   { title: "Student Project Portal", description: "Platform for showcasing final year projects.", image: "https://picsum.photos/400/300?random=7", dataAiHint: "student presentation", category: "Web App" },
+  { title: "Mobile Fitness Tracker", description: "Android app for monitoring workouts.", image: "https://picsum.photos/400/300?random=8", dataAiHint: "fitness app mobile", category: "Mobile App" },
 ];
 
 // Services Data
