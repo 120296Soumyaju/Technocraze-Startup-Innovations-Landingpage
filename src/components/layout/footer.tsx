@@ -13,7 +13,8 @@ export function Footer() {
           {/* Column 1: Logo and About */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Logo className="h-8 w-auto" />
+              {/* Increased logo size in footer */}
+              <Logo className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground">
               Turning ideas into innovation with technology.
