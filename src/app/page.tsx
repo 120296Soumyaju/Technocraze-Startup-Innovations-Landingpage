@@ -251,7 +251,7 @@ export default function Home() {
                      <div>
                        <h3 className="font-semibold">Email</h3>
                        {/* Replace with actual email if available */}
-                       <a href="mailto:contact@technocraze.com?subject=Inquiry%20from%20Website" className="text-muted-foreground hover:text-primary transition-colors">contact@technocraze.com</a>
+                       <a href="mailto:technocrazestartupinnovations@gmail.com?subject=Inquiry%20from%20Website" className="text-muted-foreground hover:text-primary transition-colors">technocrazestartupinnovations@gmail.com</a>
                      </div>
                    </div>
                     <div className="flex items-center gap-4">
@@ -259,7 +259,7 @@ export default function Home() {
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                       <div>
                         <h3 className="font-semibold">Instagram DM</h3>
-                        <a href="https://www.instagram.com/technocraze_startupinnovations/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">@technocraze_startupinnovations</a>
+                        <a href="https://www.instagram.com/technocraze.startupinnovations/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">@technocraze.startupinnovations</a>
                       </div>
                     </div>
                  </div>

@@ -14,7 +14,6 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <Logo className="h-8 w-auto" />
-              <span className="font-bold text-lg">Technocraze Innovations</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Turning ideas into innovation with technology.
