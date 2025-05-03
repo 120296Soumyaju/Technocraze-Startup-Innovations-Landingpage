@@ -14,7 +14,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               {/* Increased logo size in footer */}
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-12 w-auto" /> {/* Increased from h-10 */}
             </Link>
             <p className="text-sm text-muted-foreground">
               Turning ideas into innovation with technology.

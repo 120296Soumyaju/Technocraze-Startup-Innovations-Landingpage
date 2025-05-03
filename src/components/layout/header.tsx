@@ -12,7 +12,7 @@ export function Header() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             {/* Increased logo size in desktop view */}
-            <Logo className="h-10 w-auto" />
+            <Logo className="h-12 w-auto" /> {/* Increased from h-10 */}
              {/* Removed company title span */}
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -61,7 +61,7 @@ export function Header() {
               onClick={() => document.querySelector<HTMLButtonElement>('[data-radix-dialog-close]')?.click()}
             >
               {/* Used larger logo in sheet */}
-              <Logo className="mr-2 h-8 w-auto" />
+              <Logo className="mr-2 h-10 w-auto" /> {/* Increased from h-8 */}
               {/* Removed company title span */}
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
@@ -102,7 +102,7 @@ export function Header() {
          <div className="flex flex-1 items-center justify-start space-x-2 md:hidden">
            <Link href="/" className="flex items-center">
              {/* Used larger logo in mobile view */}
-             <Logo className="h-8 w-auto" />
+             <Logo className="h-10 w-auto" /> {/* Increased from h-8 */}
              {/* Removed company title span */}
            </Link>
          </div>
